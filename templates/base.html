@@ -33,17 +33,21 @@
     <title>CCL {% block extraTitle %}{% endblock extraTitle %}</title>
 </head>
 <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-dark my-0">Cássia Carolina Leal</h2>
                 </a>
             </div>
-            <div class="row">
-                <div class="col-md-3 ml-md-auto">Customers</div>
-                <div class="col-md-3 ml-md-auto">Sercices</div>
-              </div>
+            <a href="{% url 'customers' %}">
+                <div class="col-md-3 ml-md-auto">
+                    Customers
+                </div>
+            </a>
+                <div class="col-md-3 ml-md-auto">
+                    Services
+                </div>
             <div class="col-2 ml-auto">
                 <a class="text-dark nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="text-center">
